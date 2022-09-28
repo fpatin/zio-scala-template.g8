@@ -2,7 +2,7 @@
 addSbtPlugin("io.spray" % "sbt-revolver" % "0.9.1")
 $if(useSQLDatabase.truthy) $
 // https://github.com/flyway/flyway-sbt https://search.maven.org/search?q=g:io.github.davidmweber%20AND%20a:flyway-sbt&core=gav
-addSbtPlugin("io.github.davidmweber" % "flyway-sbt" % "7.4.0")
+  addSbtPlugin("io.github.davidmweber" % "flyway-sbt" % "7.4.0")
 $endif$
 // https://github.com/sbt/sbt-native-packager https://github.com/sbt/sbt-native-packager/releases
 addSbtPlugin("com.github.sbt" % "sbt-native-packager" % "1.9.11")
@@ -12,3 +12,4 @@ addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.10.1")
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.3")
 // https://github.com/sbt/sbt-release https://github.com/sbt/sbt-release/releases
 addSbtPlugin("com.github.sbt" % "sbt-release" % "1.1.0")
+addDependencyTreePlugin

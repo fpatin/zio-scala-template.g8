@@ -9,13 +9,13 @@ object Versions {
   val zioQuill = "4.4.1" // https://github.com/zio/zio-protoquill https://github.com/zio/zio-protoquill/tags
   $endif$
   $if(useSQLDatabase.truthy) $
-  val postgres = "42.3.7" // https://search.maven.org/artifact/org.postgresql/postgresql
+  val postgres = "42.5.0" // https://search.maven.org/artifact/org.postgresql/postgresql
   $endif$
   val sttp                 = "3.8.0"      // https://sttp.softwaremill.com/en/latest/ https://github.com/softwaremill/sttp/releases
   val tapir                = "1.1.1"      // https://tapir.softwaremill.com/en/latest/index.html https://github.com/softwaremill/tapir/releases
-  val zio                  = "2.2.0"      // https://zio.dev/ https://github.com/zio/zio/releases
+  val zio                  = "2.0.2"      // https://zio.dev/ https://github.com/zio/zio/releases
   val zioPrelude           = "1.0.0-RC15" // https://zio.github.io/zio-prelude/ https://github.com/zio/zio-prelude/releases
-  val zioConfig            = "2.0.9"      // https://zio.github.io/zio-config/ https://github.com/zio/zio-config/releases
+  val zioConfig            = "3.0.2"      // https://zio.github.io/zio-config/ https://github.com/zio/zio-config/releases
   val zioJson              = "0.3.0"      // https://github.com/zio/zio-json https://github.com/zio/zio-json/releases
   val zioLogging           = "2.1.1"      // https://zio.github.io/zio-logging/ https://github.com/zio/zio-logging/releases
   val logback              = "1.4.1"      // http://logback.qos.ch/ https://logback.qos.ch/download.html
@@ -60,9 +60,9 @@ object Dependencies {
     "dev.zio" %% "zio-stream" % Versions.zio
   )
   lazy val zioConfig: Seq[ModuleID] = Seq(
-    "dev.zio" %% "zio-config"          % Versions.zioConfig,
-    "dev.zio" %% "zio-config-magnolia" % Versions.zioConfig,
-    "dev.zio" %% "zio-config-typesafe" % Versions.zioConfig
+    "dev.zio" %% "zio-config"            % Versions.zioConfig,
+    "dev.zio" %% "zio-config-derivation" % Versions.zioConfig,
+    "dev.zio" %% "zio-config-typesafe"   % Versions.zioConfig
   )
   lazy val zioJson: Seq[ModuleID] = Seq(
     "dev.zio" %% "zio-json" % Versions.zioJson
