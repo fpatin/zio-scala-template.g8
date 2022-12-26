@@ -1,6 +1,6 @@
 // give the user a nice default project!
 ThisBuild / organization := "$organization$"
-ThisBuild / scalaVersion := "3.2.0"
+ThisBuild / scalaVersion := "3.2.1"
 
 lazy val sharedSettings = Seq(
   scalacOptions ++= Seq(

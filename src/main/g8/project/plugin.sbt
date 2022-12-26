@@ -7,9 +7,9 @@ $endif$
 // https://github.com/sbt/sbt-native-packager https://github.com/sbt/sbt-native-packager/releases
 addSbtPlugin("com.github.sbt" % "sbt-native-packager" % "1.9.11")
 // https://github.com/scalacenter/sbt-scalafix https://github.com/scalacenter/sbt-scalafix/releases
-addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.10.1")
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.10.4")
 // https://scalameta.org/scalafmt/ https://github.com/scalameta/sbt-scalafmt/releases
-addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.3")
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.5.0")
 // https://github.com/sbt/sbt-release https://github.com/sbt/sbt-release/releases
 addSbtPlugin("com.github.sbt" % "sbt-release" % "1.1.0")
 addDependencyTreePlugin

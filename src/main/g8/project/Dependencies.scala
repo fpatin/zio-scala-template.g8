@@ -2,25 +2,25 @@ import sbt._
 
 object Versions {
   $if(useGraphQL.truthy) $
-  val caliban = "2.0.1" // https://ghostdogpr.github.io/caliban/ https://github.com/ghostdogpr/caliban/releases
+  val caliban = "2.0.2" // https://ghostdogpr.github.io/caliban/ https://github.com/ghostdogpr/caliban/releases
   $endif$
   $if(useSQLDatabase.truthy) $
-  val flyway   = "9.3.1" // https://flywaydb.org/ https://github.com/flyway/flyway/releases
-  val zioQuill = "4.4.1" // https://github.com/zio/zio-protoquill https://github.com/zio/zio-protoquill/tags
+  val flyway   = "9.10.2" // https://flywaydb.org/ https://github.com/flyway/flyway/releases
+  val zioQuill = "4.6.0" // https://github.com/zio/zio-protoquill https://github.com/zio/zio-protoquill/tags
   $endif$
   $if(useSQLDatabase.truthy) $
-  val postgres = "42.5.0" // https://search.maven.org/artifact/org.postgresql/postgresql
+  val postgres = "42.5.1" // https://search.maven.org/artifact/org.postgresql/postgresql
   $endif$
-  val sttp                 = "3.8.0"      // https://sttp.softwaremill.com/en/latest/ https://github.com/softwaremill/sttp/releases
-  val tapir                = "1.1.1"      // https://tapir.softwaremill.com/en/latest/index.html https://github.com/softwaremill/tapir/releases
-  val zio                  = "2.0.2"      // https://zio.dev/ https://github.com/zio/zio/releases
-  val zioPrelude           = "1.0.0-RC15" // https://zio.github.io/zio-prelude/ https://github.com/zio/zio-prelude/releases
-  val zioConfig            = "3.0.2"      // https://zio.github.io/zio-config/ https://github.com/zio/zio-config/releases
-  val zioJson              = "0.3.0"      // https://github.com/zio/zio-json https://github.com/zio/zio-json/releases
-  val zioLogging           = "2.1.1"      // https://zio.github.io/zio-logging/ https://github.com/zio/zio-logging/releases
-  val logback              = "1.4.1"      // http://logback.qos.ch/ https://logback.qos.ch/download.html
-  val zioMetricsConnectors = "2.0.0"      // https://github.com/zio/zio-metrics-connectors
-  val zioTestContainers    = "0.8.0"      // https://github.com/scottweaver/testcontainers-for-zio https://github.com/scottweaver/testcontainers-for-zio/releases
+  val sttp                 = "3.8.5"      // https://sttp.softwaremill.com/en/latest/ https://github.com/softwaremill/sttp/releases
+  val tapir                = "1.2.4"      // https://tapir.softwaremill.com/en/latest/index.html https://github.com/softwaremill/tapir/releases
+  val zio                  = "2.0.5"      // https://zio.dev/ https://github.com/zio/zio/releases
+  val zioPrelude           = "1.0.0-RC16" // https://zio.github.io/zio-prelude/ https://github.com/zio/zio-prelude/releases
+  val zioConfig            = "3.0.6"      // https://zio.github.io/zio-config/ https://github.com/zio/zio-config/releases
+  val zioJson              = "0.4.2"      // https://github.com/zio/zio-json https://github.com/zio/zio-json/releases
+  val zioLogging           = "2.1.6"      // https://zio.github.io/zio-logging/ https://github.com/zio/zio-logging/releases
+  val logback              = "1.4.5"      // http://logback.qos.ch/ https://logback.qos.ch/download.html
+  val zioMetricsConnectors = "2.0.4"      // https://github.com/zio/zio-metrics-connectors https://github.com/zio/zio-metrics-connectors/releases
+  val zioTestContainers    = "0.9.0"      // https://github.com/scottweaver/testcontainers-for-zio https://github.com/scottweaver/testcontainers-for-zio/releases
 }
 
 object Dependencies {
